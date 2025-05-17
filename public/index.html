@@ -1,89 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.7.3/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.7.3/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.7.3/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jasindo Security - Professional security services including bodyguards, security personnel, and cleaning services in Jakarta">
+    <title>Jasindo Security | Professional Security Services Jakarta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Jasindo Security Logo">
+                        <span>JASINDO</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <section class="hero">
+        <div class="container">
+            <h2>Your Trusted Security Partner</h2>
+            <p>Professional security services with military and police-trained personnel</p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <section class="services-highlight">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://placehold.co/400x300?text=Security+Services" alt="Security Services">
+                    <h3>Security Services</h3>
+                    <p>Professional security personnel for offices, factories, and residential areas</p>
+                    <a href="services.html#security" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://placehold.co/400x300?text=Bodyguard+Services" alt="Bodyguard Services">
+                    <h3>Bodyguard Services</h3>
+                    <p>VIP protection with highly trained personnel</p>
+                    <a href="services.html#bodyguard" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://placehold.co/400x300?text=Event+Security" alt="Event Security">
+                    <h3>Event Security</h3>
+                    <p>Comprehensive security solutions for events</p>
+                    <a href="services.html#event" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-highlight">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Jasindo Security</h2>
+                <p>PT. Jasa Security Indoservis (Jasindo Security) is a professional security service provider with
+                    experienced personnel from military and police backgrounds. We provide comprehensive security
+                    solutions throughout Indonesia.</p>
+                <a href="about.html" class="btn">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="https://placehold.co/600x400?text=About+Jasindo" alt="About Jasindo Security">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Our Clients</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <img src="https://placehold.co/100x100?text=Client+Logo" alt="Client Logo">
+                    <p>"Jasindo Security has provided excellent security services for our company for over 5 years."</p>
+                    <h4>PT. Nike Indonesia</h4>
+                </div>
+                <!-- More testimonials would go here -->
+            </div>
+            <a href="clients.html" class="btn-secondary">View All Clients</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jasindo Security</h3>
+                    <p>Professional security services in Jakarta and throughout Indonesia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Jl. Batu Baru I, No. 15 B, Pejaten Timur, Pasar Minggu, Jakarta Selatan 12510</p>
+                    <p>Phone: 021-2753 1106</p>
+                    <p>Email: info@security-jasindo.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Jasindo Security. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
